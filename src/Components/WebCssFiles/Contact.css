@@ -1,0 +1,196 @@
+/* Styles for the contact container */
+.contact-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Styles for the contact content */
+.contact-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-img {
+  margin-bottom: -2.8rem;
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for the contact title */
+.contact-content .contact-title h1 {
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-family: var(--main-title-font);
+  color: var(--gray-color);
+  margin-top: 25px;
+}
+
+.contact-title span {
+  color: #ff6d60;
+}
+
+/* Styles for the contact paragraph */
+.contact-content .contact-para p {
+  font-size: 22px;
+  color: var(--light-gray-color);
+}
+
+/* Styles for the email input section */
+.contact-content .enter-email {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically */
+  gap: 15px;
+}
+
+/* Styles for the custom input */
+.enter-email .custom-input {
+  appearance: none;
+  display: inline-block;
+  width: calc(100% - 160px); /* Adjust width as per your design */
+  line-height: 1.4em;
+  outline: none;
+  border: none;
+  padding: 15px;
+  border-radius: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the button */
+.enter-email .contact-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-family: var(--main-title-font);
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid var(--gray-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-button svg {
+  font-size: 25px;
+  vertical-align: middle;
+  transition: all ease 500ms;
+}
+
+.contact-button:hover svg {
+  transform: scale(1.8) rotate(360deg);
+}
+
+/* Fix for email input size */
+.enter-email .custom-input {
+  width: calc(100% - 150px); /* Adjust width as per your design */
+}
+
+/* Styles for the border */
+.border {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid rgb(222, 220, 234);
+  margin-top: 25px;
+}
+
+/* Styles for social media links */
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Styles for social media icons */
+.social-media span {
+  vertical-align: middle;
+}
+
+/* Styles for specific social media links */
+.social-media .instagram a,
+.social-media .twitter a {
+  font-size: 18px;
+  color: var(--light-gray-color);
+  letter-spacing: 1px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 750px) {
+  .contact-content .contact-title h1 {
+    font-size: 60px;
+  }
+
+  .contact-content .contact-para p {
+    font-size: 18px;
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+
+  .enter-email {
+    gap: 15px;
+  }
+
+  .enter-email .custom-input {
+    width: 100%;
+  }
+
+  .enter-email .contact-button {
+    padding: 15px 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .social-media .instagram a,
+  .social-media .twitter a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-content .contact-title h1 {
+    font-size: 40px;
+  }
+
+  .contact-content .contact-para p {
+    font-size: 16px;
+  }
+
+  .enter-email .button {
+    padding: 12px 25px;
+  }
+
+  .social-media .instagram a,
+  .social-media .twitter a {
+    font-size: 14px;
+  }
+
+  .enter-email {
+    display: flex;
+    flex-direction: column;
+  }
+}

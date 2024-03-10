@@ -1,0 +1,206 @@
+/* Import Beautiful Google Fonts */
+
+
+/* Styles for the product container */
+.product-container {
+  width: 100%;
+  min-height: 80vh;
+  margin: 20px auto;
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: -20px;
+}
+
+/* Styles for the product content */
+.product-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+
+.product-img-content {
+  flex: 1;
+  max-width: 50%; /* Adjust the maximum width to 50% */
+}
+
+.size-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.size-box.selected {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  border-color: var(--gray-color);
+}
+
+/* Styles for the image wrapper */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Styles for the product image */
+.product-image {
+  max-width: 100%;
+  margin-top: 30px;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Styles for the previous and next buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 1000;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Styles for the text content */
+.text-content {
+  flex: 1;
+  max-width: 50%; /* Adjust maximum width to 50% */
+}
+
+/* Styles for the product heading */
+.text-content .heading h1 {
+  font-size: 30px;
+  font-family: var(--main-title-font);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the product price */
+.text-content .product-price p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Styles for the product paragraph */
+.text-content .para p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+/* Styles for the size boxes */
+.text-content .size-boxes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the product button */
+.text-content .product-button {
+  display: flex;
+  padding: 15px 40px;
+  border: 2px solid var(--gray-color);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* Styles for 1000px breakpoint */
+@media (max-width: 1000px) {
+  .product-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .size-box {
+    margin-right: 0;
+  }
+}
+
+/* Additional Media Queries for Smaller Screens */
+
+/* Styles for 750px breakpoint */
+@media (max-width: 750px) {
+  .product-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+
+  .product-button {
+    padding: 10px 30px;
+  }
+
+  .text-content {
+    flex: 1;
+    max-width: 65%; /* Adjust maximum width to 50% */
+  }
+  
+}
+
+/* Styles for 500px breakpoint */
+@media (max-width: 500px) {
+  .heading h1 {
+    font-size: 24px;
+  }
+
+  .product-price p {
+    font-size: 16px;
+  }
+
+  .product-image {
+    max-width: 100%;
+    width: 80%;
+  }
+
+  .para p {
+    font-size: 14px;
+  }
+
+  .size-box {
+  
+    font-size: 12px;
+  }
+
+  .text-content {
+    max-width: 90%;
+  
+  }
+  
+}
+
+
+/* Adjust image on smaller screens */
+@media (max-width: 750px) {
+  .product-img-content {
+    max-width: 100%; /* Set maximum width to 100% for better mobile display */
+  }
+}

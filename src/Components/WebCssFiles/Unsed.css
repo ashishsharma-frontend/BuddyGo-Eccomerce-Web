@@ -1,0 +1,64 @@
+/* Import Beautiful Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Anton&family=Audiowide&family=Oswald&family=Space+Mono&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease-out;
+  scroll-behavior: smooth;
+}
+
+/* Define custom fonts using @font-face */
+@font-face {
+  font-family: "Clarkson";
+  src: url("../assets/Fonts/Clarkson.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Evogria";
+  src: url("../assets/Fonts/Evogria.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Signature";
+  src: url("../assets/Fonts/GrayscaleSignature-mL16a.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define CSS variables for color scheme */
+:root {
+  --gray-color: #262020;
+  --light-gray-color: #424249;
+  --cream-color: #fffbf5;
+  --white-color: #f7f6f4;
+  --extra-first-color: #ffa1f5;
+  --extra-second-color: #8ddfcb;
+}
+
+/* Define CSS variables for fonts and transitions */
+:root {
+  --title-font: "Clarkson";
+  --main-title-font: "Evogria";
+  --signature-font: "Signature";
+  --transition-1: 250ms ease;
+  --transition-2: 500ms ease;
+}
+
+/* Styling for the body */
+body {
+  font-family: "Space Mono", monospace;
+  color: var(--gray-color);
+  transition: var(--transition-2);
+}
+

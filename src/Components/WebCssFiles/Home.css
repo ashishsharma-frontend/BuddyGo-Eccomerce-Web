@@ -1,0 +1,130 @@
+/* Styles for the home container */
+.home-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+/* Styles for the home content */
+.home-content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.para-home p {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--title-font);
+}
+
+/* Styles for the text content */
+.text-content-home {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.text-content-home .heading-text h2 {
+  font-size: 2rem;
+  color: #ff6d60;
+  font-family: var(--signature-font);
+  letter-spacing: 1px;
+  margin: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.text-content-home .paragraph p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+/* Styles for the buttons */
+.home-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all ease 500ms;
+}
+
+.home-btn button {
+  padding: 20px 30px;
+  width: 250px;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: all ease 500ms;
+}
+
+.home-btn .login {
+  background-color: #F9F9F9;
+  border: 2px solid var(--gray-color);
+  color: var(--gray-color);
+}
+
+.home-btn button svg {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: all ease 500ms;
+}
+
+.home-btn button:hover {
+  background-color: transparent;
+  border: 2px solid var(--gray-color);
+  color: var(--gray-color);
+  transform: scale(1.1);
+}
+
+.home-btn button:hover svg {
+  transform: rotate(90deg);
+}
+
+/* Video Styles */
+.video {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  background-color: rgb(242, 243, 247);
+  object-position: 50% 50%;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1000px) {
+  .home-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .text-content-home .heading-text h2 {
+    font-size: 2rem;
+  }
+
+  .text-content-home .paragraph p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-content-home .heading-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-content-home .paragraph p {
+    font-size: 14px;
+  }
+}

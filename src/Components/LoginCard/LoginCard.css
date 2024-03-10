@@ -1,0 +1,91 @@
+/* LoginCard.css */
+
+.login-card-container {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.login-card {
+  max-width: 450px;
+  width: 100%;
+  background-color: #e1f0da;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  text-align: center; /* Center text */
+}
+
+.close-icon {
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px; /* Adjust font size */
+  color: #333; /* Set color */
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  text-align: start;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--gray-color);
+  color: #e1f0da;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 15px;
+  transition: all ease 500ms;
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--gray-color);
+  transform: scale(1);
+  border: 2px solid var(--gray-color);
+}
+
+.toggle-signup {
+  color: var(--gray-color); /* Set text color */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px; /* Add margin */
+}

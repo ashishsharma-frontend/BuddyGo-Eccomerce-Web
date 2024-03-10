@@ -1,0 +1,105 @@
+/* TheCollection.css */
+
+
+/* Styling for the collection section */
+.collection {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* Styling for the heading within the collection section */
+.collection .heading h1 {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  font-family: var(--main-title-font);
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-top: 120px;
+}
+
+/* Styling for the content within the collection section */
+.collection .collection-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Styling for the card layout within the collection section */
+.collections-card {
+  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+/* Styling for each card within the collection section */
+.collections-card .card {
+  width: 400px;
+  padding: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-1);
+}
+
+/* Adding a rotation effect on card hover */
+.collections-card .card:hover {
+  transform: rotate(5deg);
+}
+
+/* Styling for images within the cards */
+.collections-card .card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling for price section within the cards */
+.collections-card .card .price {
+  margin-top: 15px;
+  color: var(--light-gray-color);
+}
+
+/* Styling for the name section within the cards */
+.collections-card .card .name p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--light-gray-color);
+}
+
+/* Adding styling for the span within the name section */
+.collections-card .card .name p span {
+  vertical-align: middle;
+  color: var(--gray-color);
+  display: none;
+}
+
+/* Displaying the span on hover for the name section */
+.collections-card .card .name p:hover span {
+  display: inline-block;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 750px) {
+  .collection .heading h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .collection .heading h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 350px) {
+  .collection .heading h1 {
+    font-size: 50px;
+  }
+}
